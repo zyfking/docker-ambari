@@ -36,7 +36,7 @@ RUN curl -o /usr/bin/jq http://stedolan.github.io/jq/download/linux64/jq && chmo
 ENV JDK_ARTIFACT jdk-8u221-linux-x64.tar.gz
 ENV JDK_VERSION jdk1.8.0_221
 
-# install Ambari specified 1.7 jdk
+# install Ambari specified 1.8 jdk
 RUN mkdir /usr/jdk64 && cd /usr/jdk64 && wget http://public-repo-1.hortonworks.com/ARTIFACTS/$JDK_ARTIFACT && \
     tar -xf $JDK_ARTIFACT && rm -f $JDK_ARTIFACT
 ENV JAVA_HOME /usr/jdk64/$JDK_VERSION
