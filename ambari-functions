@@ -3,16 +3,16 @@
 curl -Lo .amb j.mp/docker-ambari && . .amb
 ########################################
 
-full documentation: https://github.com/sequenceiq/docker-ambari
+full documentation: https://github.com/zyfking/docker-ambari
 USAGE
 
 : ${NODE_PREFIX=amb}
 : ${AMBARI_SERVER_NAME:=${NODE_PREFIX}-server}
-: ${AMBARI_SERVER_IMAGE:="hortonworks/ambari-server:latest"}
-: ${AMBARI_AGENT_IMAGE:="hortonworks/ambari-agent:latest"}
+: ${AMBARI_SERVER_IMAGE:="zyfking/ambari-server:latest"}
+: ${AMBARI_AGENT_IMAGE:="zyfking/ambari-agent:latest"}
 : ${DOCKER_OPTS:=""}
 : ${CONSUL:="${NODE_PREFIX}-consul"}
-: ${CONSUL_IMAGE:="sequenceiq/consul:v0.5.0-v6"}
+: ${CONSUL_IMAGE:="zyfking/consul:latest"}
 : ${CLUSTER_SIZE:=3}
 : ${DEBUG:=1}
 : ${SLEEP_TIME:=2}
